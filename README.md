@@ -3,7 +3,7 @@
 ## Setup
 
 ```sh
-git clone <url>
+git clone https://github.com/CodingBrosMB/chess_website.git
 ```
 
 ## Install
@@ -15,5 +15,5 @@ pipenv sync
 ## Start App
 
 ```sh
-pipenv run uvicorn app.main:app --reload
+pipenv run uvicorn backend.main:app --reload
 ```

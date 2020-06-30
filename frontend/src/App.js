@@ -1,24 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import MenuAppBar from './components/AppBar';
+
 
 function App() {
   return (
     <div className="App">
+      <MenuAppBar />
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <h1>Awesome Chess</h1><br /><h2>brought to you by<br />CodingBrosMB</h2>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Work in Progress
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://github.com/CodingBrosMB/chess_website"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Check our Repository
         </a>
       </header>
+        
     </div>
   );
 }

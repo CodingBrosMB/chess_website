@@ -1,3 +1,5 @@
+.vscode
+
 # python (fastapi) backend
 
 __pychache__
@@ -17,7 +19,7 @@ node_modules
 /coverage
 
 # production
-/build
+*/build
 
 # misc
 .DS_Store

@@ -1,14 +1,33 @@
 import React from 'react';
 import './App.css';
-import MenuAppBar from './components/AppBar';
+import Link from '@material-ui/core/Link';
+import Typography from '@material-ui/core/Typography';
+import NavBar from './components/NavBar';
+
+
+function Copyright() {
+  return (
+    <Typography variant="body2" color="textSecondary" align="center">
+      {'Copyright © '}
+      <Link color="inherit" href="https://github.com/CodingBrosMB">
+        CodingBrosMB
+      </Link>{' '}
+      {new Date().getFullYear()}
+      {'.'}
+    </Typography>
+  );
+}
 
 
 function App() {
   return (
     <div className="App">
-      <MenuAppBar />
       <header className="App-header">
-        <h1>Awesome Chess</h1><br /><h2>brought to you by<br />CodingBrosMB</h2>
+        <h1>Awesome Chess</h1>
+      </header>
+      <main className="App-main">
+        <NavBar />
+        <h1>brought to you by<br />CodingBrosMB</h1>
         <p>
           Work in Progress
         </p>
@@ -20,8 +39,10 @@ function App() {
         >
           Check our Repository
         </a>
-      </header>
-        
+      </main>
+      <footer className="App-footer">
+        <Copyright />
+      </footer>
     </div>
   );
 }
